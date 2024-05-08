@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display salary</title>
+</head>
+<body>
+    <center>
+        <h1>Display salary Table</h1>
+        <table border="2px">
+            <tr>
+                <th>GRADE</th>
+                <th>LOSAL</th>
+                <th>HISAL</th>
+            </tr>
+            {% for so in QSLO %}
+                <tr>
+                    <td>{{so.GRADE}}</td>
+                    <td>{{so.LOSAL}}</td>
+                    <td>{{so.HISAL}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
